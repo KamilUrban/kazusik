@@ -1,0 +1,146 @@
+/* RESET */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* PAGE */
+.page {
+  height: 100%;
+}
+
+/* HERO SECTION (3) */
+.hero {
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* TITLE (1) */
+.title {
+  background: rgba(0,0,0,0.35);
+
+  color: #7b6907;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+  margin: 0;
+}
+
+/* BUTTON (2) */
+.cta {
+  padding: 40px 70px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+
+  background: rgba(128, 124, 70,0.3);
+  backdrop-filter: blur(10px);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.cta:hover {
+  background: rgba(255,255,255,0.35);
+  transform: scale(1.05);
+}
+
+/* BOTTOM SECTION (4) */
+.bottom {
+  height: 40vh;
+  background: linear-gradient(
+    135deg,
+    #4e3d1c,
+    #e0e0e0
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-content {
+  text-align: center;
+  color: #333;
+}
+
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #eee;
+  padding: 40px 60px;
+
+  position: relative;
+  min-height: 160px;
+}
+
+.footer-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.footer-logo {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: min(180px, 25vw);
+  height: auto;
+  opacity: 0.9;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+  color: #bfb734;
+  letter-spacing: 2px;
+}
+
+.logo {
+  position: absolute;
+  top: 4vh;
+  left: 4vw;
+
+  width: min(200px, 20vw);
+  height: auto;
+}
+
